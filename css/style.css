@@ -31,7 +31,7 @@ button {
 */
 
 header {
-    background-image: url("/image-assets/cookingCOMP.jpg");
+    background-image: url("../image-assets/cookingCOMP.jpg");
     background-size: cover;
     background-position: center;
     height: 30rem;

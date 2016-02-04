@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A Tool for Every Kitchen</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="header-text">
+            <p>LOVE.</p>
+            <p>LIFE.</p>
+            <p>FOOD.</p>
+        </div>
+    </header>
+    <section id="search-input">
+        <h1>Recipe Search App</h1>
+        <p>Only have a few ingredients at your finger tips? Looking for a specific cuisine? Enter the ingredients you have, the type of cuisine you enjoy and find a fantastic recipe without having to go to the grocery store!</p>
+        <input type="text" id="ingredients-input" placeholder="list ingredients separated by a semicolon">
+
+        <select id="cuisine-dropdown" name="cuisines">
+            <option value="choose" selected="" disabled="">Please select a Cuisine</option>
+            <option value="american">American</option>
+            <option value="italian">Italian</option>
+            <option value="asian">Asian</option>
+            <option value="mexican">Mexican</option>
+            <option value="southern">Southern &amp; Soul Food</option>
+            <option value="french">French</option>
+            <option value="southwestern">Southwestern</option>
+            <option value="barbecue">Barbecue</option>
+            <option value="indian">Indian</option>
+            <option value="chinese">Chinese</option>
+            <option value="cajun">Cajun &amp; Creole</option>
+            <option value="english">English</option>
+            <option value="mediterranean">Mediterranean</option>
+            <option value="greek">Greek</option>
+            <option value="spanish">Spanish</option>
+            <option value="german">German</option>
+            <option value="thai">Thai</option>
+            <option value="moroccan">Moroccan</option>
+            <option value="irish">Irish</option>
+            <option value="japanese">Japanese</option>
+            <option value="cuban">Cuban</option>
+            <option value="hawaiin">Hawaiin</option>
+            <option value="swedish">Swedish</option>
+            <option value="hungarian">Hungarian</option>
+            <option value="portugese">Portugese</option>
+        </select>
+
+        <div>
+            <button id='search-button'>SEARCH</button>
+        </div>
+    </section>
+
+    <section id="search-results">
+        <ul class="recipe-wrapper">
+        </ul>
+    </section>
+    <section>
+        <button id="search-again">SEARCH AGAIN</button>
+    </section>
+    <footer class="social">
+        <div class="content">
+            <hr>
+            <h2>Join me on</h2>
+            <ul class="icons">
+                <li>
+                    <a href="https://www.linkedin.com/pub/lynsey-teague/63/145/250">
+                        <img src="image-assets/square-linkedin.png" alt="LinkedIn Image">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.behance.net/lynseymteaa196">
+                        <img src="image-assets/square-behance.png" alt="Behance Image">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/14LMarie">
+                        <img src="image-assets/square-git.png" alt="Github Image">
+                    </a>
+                </li>
+            </ul>
+
+            <p class="copy">
+                © Lynsey Marie Teague
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="apps/app.js" type="application/javascript"></script>
+</body>
+
+</html>

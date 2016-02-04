@@ -1,0 +1,189 @@
+/* CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+}
+
+
+/* General styles
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #F1F1F1;
+}
+
+button {
+    padding: 0.5rem;
+}
+
+
+/* Header styles
+(all the styles inside the < header > or < nav > tags)
+*/
+
+header {
+    background-image: url("/image-assets/cookingCOMP.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+}
+
+.header-text,
+section,
+footer {
+    width: 68%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+header .header-text {
+    padding-top: 13rem;
+    text-align: left;
+}
+
+.header-text p {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 3.2rem;
+    margin: -1.2rem 0;
+    text-shadow: 2px 2px #000000;
+}
+
+
+/* Content styles
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+section#search-input {
+    background-color: white;
+    text-align: center;
+    padding: 2.5rem;
+    Margin-top: -3rem;
+}
+
+section h1 {
+    font-size: 1.8rem;
+    color: #4C610E;
+    padding-bottom: 1rem;
+}
+
+#ingredients-input,
+#cuisine-dropdown,
+#search-button {
+    margin-top: 2rem;
+    border-radius: 4px;
+}
+
+#ingredients-input,
+#cuisine-dropdown {
+    background-color: #F1F1F1;
+    border: 1px solid darkgray;
+}
+
+#ingredients-input {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+section #search-button,
+section #search-again {
+    background: #FFD34E;
+    background-image: -webkit-linear-gradient(top, #FFD34E, #DB9E36);
+    background-image: -moz-linear-gradient(top, #FFD34E, #DB9E36);
+    background-image: -ms-linear-gradient(top, #FFD34E, #DB9E36);
+    background-image: -o-linear-gradient(top, #FFD34E, #DB9E36);
+    background-image: linear-gradient(to bottom, #FFD34E, #DB9E36);
+    text-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section #search-button:hover,
+section #search-again:hover {
+    background: #FED365;
+    background-image: -webkit-linear-gradient(top, #FED365, #FAB33E);
+    background-image: -moz-linear-gradient(top, #FED365, #FAB33E);
+    background-image: -ms-linear-gradient(top, #FED365, #FAB33E);
+    background-image: -o-linear-gradient(top, #FED365, #FAB33E);
+    background-image: linear-gradient(to bottom, #FED365, #FAB33E);
+    text-decoration: none;
+}
+
+section #search-again {
+    display: none;
+    margin: 1rem;
+}
+
+section#search-results .recipe-wrapper {
+    list-style-type: none;
+    width: 12rem;
+    display: inline-block;
+}
+
+section#search-results ul .recipe-result {
+    border: 1px solid #d8d8d8;
+    margin: 1rem;
+}
+
+section#search-results ul li img {
+    width: 100%;
+}
+
+section#search-results ul .recipe-result ul {
+    padding: 1rem 0.2rem;
+    list-style-type: none;
+    height: 11rem;
+    overflow: hidden;
+}
+
+section#search-results ul .recipe-result ul li {
+    text-align: left;
+}
+
+
+/* Footer styles
+(all the styles inside the < footer > tag)
+*/
+
+.social {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.social hr {
+    border: 0;
+    border-top: 1px dotted #C0C0C0;
+    padding-bottom: 0.5rem;
+}
+
+.social .icons > li {
+    display: inline-block;
+    margin: 0.5rem 0.3rem;
+}
+
+.social img {
+    height: 2rem;
+    width: auto;
+}
+
+.social .copy {
+    color: #838994;
+}
+
+
+/* Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+*/

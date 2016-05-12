@@ -136,6 +136,7 @@ section#search-results .recipe-wrapper {
 section#search-results ul .recipe-result {
     border: 1px solid #d8d8d8;
     margin: 1rem;
+    box-shadow: 0px 4px 9px #bababa;
 }
 
 section#search-results ul li img {
@@ -143,7 +144,7 @@ section#search-results ul li img {
 }
 
 section#search-results ul .recipe-result ul {
-    padding: 1rem 0.2rem;
+    padding: 1rem 0.4rem;
     list-style-type: none;
     height: 11rem;
     overflow: hidden;
@@ -151,6 +152,11 @@ section#search-results ul .recipe-result ul {
 
 section#search-results ul .recipe-result ul li {
     text-align: left;
+}
+
+.recipeTitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
 }
 
 

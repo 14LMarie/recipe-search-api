@@ -10,7 +10,7 @@ $(document).ready(function () {
             .done(function (result) {
                 var html = "";
                 $.each(result.matches, function (index, value) {
-                    html += '<ul class="recipe-wrapper"><div class="recipe-result"><li><img src="' + value.imageUrlsBySize[90] + '"><ul><li>' + value.recipeName + '</li><li> Cooking time: ' + (value.totalTimeInSeconds / 60) + " min" + '</li><li> Rating: ' + value.rating + " stars" + '</li></ul></li></div></ul>';
+                    html += '<ul class="recipe-wrapper"><div class="recipe-result"><li><img src="' + value.imageUrlsBySize[90] + '"><ul><li class="recipeTitle">' + value.recipeName + '</li><li> Cooking time: ' + (value.totalTimeInSeconds / 60) + " min" + '</li><li> Rating: ' + value.rating + " stars" + '</li></ul></li></div></ul>';
                 });
                 $('#search-results').html(html);
             })

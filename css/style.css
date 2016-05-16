@@ -154,6 +154,15 @@ section#search-results ul .recipe-result ul li {
     text-align: left;
 }
 
+section#search-results ul .recipe-result ul li a {
+    text-decoration: none;
+    color: saddlebrown;
+}
+
+section#search-results ul .recipe-result ul li a:hover {
+    color: #B3713D;
+}
+
 .recipeTitle {
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
